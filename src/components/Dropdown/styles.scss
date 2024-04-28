@@ -1,0 +1,30 @@
+
+.dropdown-my {
+    z-index: 1000;
+    max-height: 300px;
+    overflow: auto;
+    min-width: 100px;
+    background: white;
+}
+.color-picker-dropdown{
+    min-width: 10px !important;
+    padding: 8px;
+    top: 5px !important
+
+}
+.calendar-dropdown{
+    min-width: 250px;
+    z-index: 1010;
+}
+
+.shadow-dropdown {
+    box-shadow: 0 2px 11px -3px rgb(30 30 30 / 54%)
+}
+
+.card-shadow {
+    box-shadow: 0 2px 13px -5px rgb(50 50 50 / 35%)
+}
+
+.calendar-backdrop-overlay{
+    z-index: 1009;
+}

@@ -1,0 +1,119 @@
+
+.add-event-multi-modal {
+    overflow: hidden;
+    max-height: 90vh;
+    width: 500px;
+    overflow-y: auto;
+    top: 30%;
+    transition: all .4s ease;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar{
+        background: transparent;
+        width: 10px;
+        border-radius: 100px;
+    }
+    //&::-webkit-scrollbar-thumb{
+    //    background: var(--hover);
+    //    width: 10px;
+    //    padding: 30px;
+    //    margin: 50px;
+    //    border-radius: 30px;
+    //}
+
+
+    .close-btn {
+        position: fixed;
+        right: 8px;
+        top: 14px;
+        z-index: 1003;
+    }
+
+    .tab-root {
+        display: flex;
+        width: 1000px;
+        transition: all .2s ease-out;
+    }
+
+    .event-input-field {
+        margin-top: 12px;
+        .event-label-icon {
+            margin-top: 1px;
+            padding-top: 10px;
+        }
+
+        textarea{
+            padding-left: 10px !important;
+        }
+    }
+
+    .new-scrollbar{
+        &::-webkit-scrollbar{
+            width: 4px;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: rgba(159, 188, 255, 0.18);
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-track{
+
+        }
+    }
+
+
+    .users-list {
+        max-height: 300px;
+        overflow-y: auto;
+
+        li {
+            list-style: none;
+            font-size: 12px;
+            color: #343434;
+            padding: 5px 4px;
+        }
+    }
+
+
+    .notifications{
+        &:hover >  .notification-close{
+            display: block;
+        }
+        .notification-close{
+            display: none;
+        }
+    }
+
+}
+
+.event-detail-modal{
+    padding: 20px;
+    .close-btn {
+        position: fixed;
+        right: 16px;
+        top: 14px;
+        z-index: 1003;
+    }
+}
+
+
+.date-chooser {
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--hover);
+    }
+}
+
+.react-calendar-update{
+    .small-calendar{
+        width: 250px;
+    }
+}
+
+
+
+.basic-title{
+    margin-left: 10px;
+    margin-right: 10px;
+}

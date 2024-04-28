@@ -1,0 +1,51 @@
+
+.small-calendar {
+    background: white;
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+
+    .date {
+        font-size: 10px;
+
+        .date-cell {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #a8a8a8;
+
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 20px;
+            &:hover {
+                background: var(--hover);
+
+                color: var(--white);
+
+            }
+        }
+
+        &.today {
+            .date-cell {
+                background: var(--active);
+                color: var(--white);
+            }
+        }
+
+        &.selected-date{
+            .date-cell {
+                background: var(--active);
+                color: var(--white);
+            }
+        }
+
+        &.current-month {
+            .date-cell {
+                color: #626262;
+            }
+        }
+    }
+}

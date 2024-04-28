@@ -1,0 +1,25 @@
+
+
+.expand-able{
+    background: white;
+    transition: all .4s ease-out;
+    overflow: hidden;
+
+    &.expand-content{
+        max-height: 200px;
+        visibility: visible;
+
+    }
+    &.collapse-content{
+        visibility: hidden;
+        max-height: 0;
+        //animation: hideHeight .4s ease-out;
+        //animation-fill-mode: both;
+    }
+}
+
+//@keyframes hideHeight {
+//    0%{ max-height: 200px }
+//    100%{ max-height: 0px }
+//
+//}
